@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: url('main3.jpg') center/cover no-repeat fixed;
+    }
+    
+    div
+    {
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+	h4
+	{
+	  font-family: 'Montserrat', sans-serif;
+	  text-align : center;
+	  margin-top : 100px;
+	  position : absolute;
+	  left : 50%;
+	  transform : translateX(-50%);
+	
+	}
+	
+    form {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      color: #ff5a5f;
+    }
+
+    table {
+      margin: auto;
+      width: 100%;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    input {
+      width: calc(100% - 20px);
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+	<div>
+	<center>
+	<form action="DeleteAccount" method="post">
+	<h2>Delete Account</h2>
+	<table>
+		<tr>
+			<td>Account Number : </td>
+			<td><input type="text" name="ac" placeholder="Enter Account no"/></td>
+		</tr>
+		<tr>
+          <td colspan="2" align="center">
+            <button type="submit">Submit</button>
+          </td>
+        </tr>
+	</table>
+	</form>
+	</center>
+	</div>
+</body>
+</html>

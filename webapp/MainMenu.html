@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Union Bank of India</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa; /* Light gray background color */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            color: #495057; /* Dark gray text color */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .marquee-container {
+            padding: 20px;
+            background: red; 
+            border-radius: 10px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .link-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .thumbnail {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .thumbnail:hover {
+            transform: scale(1.05);
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .thumbnail-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background: white; 
+            color: #fff;
+            border-radius: 0 0 10px 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #495057;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .logout-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .logout-btn {
+            background-color: forestgreen; 
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .logout-btn:hover {
+            background-color: #c82333; /* Darker red on hover */
+        }
+        
+        h4
+        {
+        	font-size : 1.2rem;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="marquee-container">
+            <h2>Welcome to Union Bank of India</h2>
+        </div>
+
+        <div class="link-container row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="createaccount.jpg">
+          <div class="thumbnail-content">
+            <h4><a href="CreateAccount.html">Create Account</a></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="updateaccount.jpg" alt="Update Account">
+          <div class="thumbnail-content">
+            <h4><a href="UpdateAccount.html">Update Account</a></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="deposit.jpg">
+          <div class="thumbnail-content">
+            <h4><a href="Deposit.html">Deposit</a></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="withdrawal.jpg">
+          <div class="thumbnail-content">
+            <h4><a href="Withdrawl.html">Withdrawal</a></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="transfer.jpg">
+          <div class="thumbnail-content">
+            <h4><a href="Transfer.html">Transfer</a></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="deleteaccount.jpg">
+          <div class="thumbnail-content">
+            <h4><a href="DeleteAccount.html">Delete Account</a></h4>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="transactionhistory.png">
+          <div class="thumbnail-content">
+            <h4><a href="TransactionHistory.html">Transaction History</a></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="searchaccount.jpeg">
+          <div class="thumbnail-content">
+            <h4><a href="AccountSearch.html">Search Account</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+
+    <div class="logout-container">
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function logout() {
+            // Redirect to the login page
+            window.location.href = "BankLogin.html"; 
+        }
+    </script>
+</body>
+
+</html>
